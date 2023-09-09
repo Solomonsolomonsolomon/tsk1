@@ -20,7 +20,8 @@ app
       res.status(200).json({
         slack_name,
         current_day: days[new Date().getDay()],
-        utc_time: new Date(),
+        utc_time: new Date().toISOString(),
+        track,
         github_file_url:
           "https://github.com/solomonsolomonsolomon/tsk1/index.js",
         github_repo_url: "https://github.com/solomonsolomonsolomon/tsk1",
